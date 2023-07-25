@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <title>la pastelería, un logo y los mensajes</title>
+        <link rel="stylesheet" href="">
+        <style>
+        /* Estilo de header */
+        header {
+            background-color: rgb(252, 107, 208);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        article{
+            background-color: rgb(25, 133, 255);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        footer {
+            background-color: rgb(29, 255, 86);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenido a la pastelería Coquis</h1>
+            <img src="assets\imagen\logopastel.png" alt="logo pastel" width="100px" height="100px">
+        </header>
+        <article>
+            <h4>Somos un grupo y empresa de pasteleros mexicanos</h4>
+            <p>Aplicamos en nuestro pais principal con 7 entidades federativas
+            como: Ciudad de México, Estado de México, Jalisco, Tlaxcala, Nuevo Leon, Puebla y Tabasco
+            </p>
+            <p>
+            Fue inagurada en el año 2015, aplicada en el facebook en una red de gremios de pastelero,
+            algo parecido al rappi como uber, por su puesto, nuestos puestos son aplicadas desde casa
+            por cierto: tiempo, cantidad, cualidad como calidad
+            </p>
+        <img src="https://i.pinimg.com/564x/4a/75/0b/4a750be7f1774284cc669cc29c840185.jpg" alt="pastel ejemp1" width="250px" height="250px">
+        <img src="https://i.pinimg.com/564x/57/7f/ec/577fec853aae848cdf8f28edbe93477d.jpg" alt="pastel ejemp1" width="250px" height="250px">
+    </article>
+    <footer>
+        <h5><a [routerLink]="['/ejemplo2']"> para los clientes</a> </h5> <h5> <a [routerLink]="['/ejemplo3']">aplicada en pasteleros (cosulta)</a></h5>
+        <button type="button" class="btn btn-primary" [routerLink]="['/ejemplo2']">Primary</button>
+        <button type="button" class="btn btn-secondary" [routerLink]="['/ejemplo3']">Secondary</button>
+    </footer>
+    </body>
+</html>

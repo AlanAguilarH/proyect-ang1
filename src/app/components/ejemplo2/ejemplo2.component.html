@@ -1,0 +1,173 @@
+<head>
+<link rel="stylesheet" href="">
+<style>
+    /* Estilo de header */
+    header {
+        background-color: rgb(252, 107, 208);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+
+    article{
+        background-color: rgb(13, 0, 131);
+        padding: 30px;
+        text-align: start;
+        font-size: 35px;
+        color: white;
+    }
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+        background-color: rgb(30, 207, 207);
+    }
+
+    nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        /* only for demonstration, should be removed */
+        background: rgb(39, 255, 104);
+        padding: 20px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    footer {
+        background-color: rgb(66, 149, 204);
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Bienvenido a la pastelería Coquis</h1>
+    <h1>Venta de pasteles</h1>
+<img src="assets\imagen\logopastel.png" alt="logo pastel" width="100px" height="100px">
+</header>
+<article>
+    <h4>Elije los productos</h4>
+    <h5>Por sabores</h5>
+</article>
+<section>
+    <nav>
+        <ul>
+            <li><h3>Sabor 1</h3></li>
+            <li><img src="https://www.recetasjudias.com/wp-content/uploads/2020/09/El-mejor-Pastel-de-Chocolate-1HERSHEY%C2%B4S.jpg" alt="pastelchocolare" width="200px" height="200px"><a href="#"></a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Chocolate</h1>
+        <p>Esta hecha en la área metropolitana. </p> 
+        <p>Costo Completo: 240 MXN, Parcial a 1/2: 135 MXN, Parte a 1/3: 75 MXN</p>
+    </article>
+</section>    
+<section>
+    <nav>
+        <ul>
+            <li><h3>Sabor 2</h3></li>
+            <li><img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2014/04/pastel-de-vainilla.jpg" alt="pastelvainilla" width="200px" height="200px"><a href="#"></a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Vainilla</h1>
+        <p>Esta hecha en Michoacana. </p> 
+        <p>Costo Completo:245 MXN, Parcial a 1/2 : 140 MXN, Parte a 1/3: 75 MXN</p>
+    </article>
+</section>
+<section>
+    <nav>
+        <ul>
+            <li><h3>Sabor 3</h3></li>
+            <li><img src="https://placeralplato.com/files/2015/11/Pastel-de-chocolate-y-fresa.jpg" alt="pastelfresa" width="200px" height="200px"><a href="#"></a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Fresa</h1>
+        <p>Esta hecha en regiones del norte. </p> 
+        <p>Costo Completo:310 MXN, Parcial a 1/2 : 160 MXN, Parte a 1/3: 95 MXN</p>
+    </article>
+</section>
+<article>
+    <h5>Por decoracion</h5>
+</article>
+<section>
+    <nav>
+        <ul>
+            <li><h3>Decoracion 1</h3></li>
+            <li><img src="https://i.pinimg.com/550x/7c/18/a6/7c18a6b355ffdf12d2cc2ebf60619f1f.jpg" alt="decofresa" width="200px" height="200px"><a href="#"></a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Fresas frescas</h1>
+        <p>Esta en toluca aplicada en invernaderos profesionales </p> 
+        <p>Costo Completo:45 MXN, Parcial a 1/2 : 30 MXN, Parte a 1/3: 20 MXN</p>
+    </article>
+</section>
+<section>
+    <nav>
+        <ul>
+            <li><h3>Decoracion 2</h3></li>
+            <li><img src="https://appng.tupperware.eu/service/appng/tupperware-products/rest/recipes/v1/images/71109/1200/845" alt="decofruta" width="200px" height="200px"><a href="#"></a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Frutas</h1>
+        <p>Esta tiene un sabor expecional en Tabasco </p> 
+        <p>Costo Completo:60 MXN, Parcial a 1/2 : 35 MXN, Parte a 1/3: 25 MXN</p>
+    </article>
+</section>
+<section>
+    <nav>
+        <ul>
+            <li><h3>Decoracion 3</h3></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvayBm7LUPTa5BvAzJDRdifGY8miuIFAdGjOFxmKP5ieZNA670s-NiCgvmpTP5UDBkkV0&usqp=CAU" alt="decomeme" width="200px" height="200px"><a href="#"></a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Personalizado Memingos</h1>
+        <p>Esta tiene un mensaje aplicado por los caplitalinos como valle de mexico </p> 
+        <p>Costo Completo:75 MXN, Parcial a 1/2 : 40 MXN, Parte a 1/3: 32 MXN</p>
+    </article>
+</section>
+<article>
+    <h3>Por su eleccion</h3>
+<h5>Por Sabor</h5><br>
+<input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+<label for="topping1">Chocolate</label><br>
+<input type="checkbox" id="topping2" name="topping2" value="Vainilla">
+<label for="topping2">Vainilla</label><br>
+<input type="checkbox" id="topping3" name="topping3" value="Fresa">
+<label for="topping3">Fresa</label><br><br>
+<h5>Por Decoracion</h5><br>
+<input type="checkbox" id="topping4" name="topping4" value="FresaDec">
+<label for="topping1">Fresas Frescas</label><br>
+<input type="checkbox" id="topping5" name="topping5" value="FrutasDec">
+<label for="topping2">Frutas</label><br>
+<input type="checkbox" id="topping6" name="topping6" value="MemeDec">
+<label for="topping3">Memingos</label><br><br>
+</article>
+<article>
+    <h3>Continue por el pedido con los siguientes datos</h3>
+    <label for="Input1"> Nombre: </label>
+    <input type="text" id="Nomb" name="Nomb"><br>
+    <label for="tel1">Teléfono: </label>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br>
+    <label for="correo1">Correo electronico: </label>
+    <input type="email" id="correo" name="correo"><br>
+    <label for="Input2"> Descripcion del pastel: </label>
+    <input type="text" id="Descrip" name="Descrip" maxlength="30"><br>
+    <input type="button" id="enviar" name="enviar" value="enviar">
+</article>
+
+
+<footer>
+<h5> <a [routerLink]="['/ejemplo1']">regresar</a></h5><h5> <a [routerLink]="['/ejemplo3']">aplicada en pasteleros (cosulta)</a></h5>
+</footer>   

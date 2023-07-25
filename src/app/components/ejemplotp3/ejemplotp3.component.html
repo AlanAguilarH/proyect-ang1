@@ -1,0 +1,36 @@
+<head>
+    
+    <title>JS en el navegador</title>
+    <h1>
+        JS en el navegador
+    </h1>
+</head>
+<body>
+    <h1 id="titulo">Así se usa JS en el navegador</h1>
+    <p>Este es un parrafo</p>
+    <a href="#" class="links">Este es otro parrafo</a>
+
+    <p id="demo"></p>
+
+    <button class="btn-primary btn" (mouseover)="showImage = true" (mouseout)="showImage = false">Muestrame la imagen</button>
+    <br>
+
+    <img 
+    *ngIf="showImage"
+    src="https://dam.ngenespanol.com/wp-content/uploads/2019/10/perros-personalidad-2.jpg" class="img-thumbnail" alt="">
+
+    <!--h2 id="click" onclick="cambiarTexto(this)">Da click aquí</h2>>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)">
+        <p>Mouse over me</p>
+    </div>
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)">
+        <p>Click me</p>
+    </div-->
+
+    <button id="boton"> Pruebame </button>
+</body>
+<footer>
+    <script src="./ejemplotp3.js"></script>
+</footer>

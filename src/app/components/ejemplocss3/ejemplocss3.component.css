@@ -1,0 +1,52 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    height: 400px;
+}
+
+div{
+    height: 400px;
+}
+
+.fondoColor{
+    background-color: #0f6666;
+}
+
+.fondoOpacidad{
+    background-color: #5d0c0c;
+    opacity: 0.6;
+}
+
+.fondoImagen{
+    background-image: url("https://uploadgerencie.com/imagenes/combinacion-negocios-ejemplos.png");
+}
+
+.fondoRepetidoX{
+    background-image: url("https://concepto.de/wp-content/uploads/2020/11/ejemplo-e1605231067292.jpg");
+    background-repeat: repeat-x;
+}
+
+.fondoRepetidoY{
+    background-image: url("https://www.educima.com/imagen-robot-dm27198.jpg");
+    background-repeat: repeat-y;
+}
+
+.fondoNoRepetido{
+    background-image: url("https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/05/19/5fa4336fad576.jpeg");
+    background-repeat: no-repeat;
+}
+
+.fondoPosicion{
+    background-image: url("https://uploadgerencie.com/imagenes/combinacion-negocios-ejemplos.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.fondoCompleto{
+    background-image: url("https://concepto.de/wp-content/uploads/2020/11/ejemplo-e1605231067292.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

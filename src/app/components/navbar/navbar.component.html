@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/imagen/Iconcompu.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Blog de Videojuegos de Construccion y estrategia</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!--active-->          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['/header']">Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">¿Quenes somomos?</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Dudas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!---[routerLink]="['/body,/duda']"--->
+              <li><a class="dropdown-item" href="#">Soy nuevo, ¿que hago para ingresar como estudiante o nuevo voluntario?</a></li>
+              <!---[routerLink]="['/duda']"--->
+              <li><a class="dropdown-item" href="#">¿como te contacto?</a></li>
+              <li><a class="dropdown-item" href="#">¿Tienes cuentas de redes sociales?</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">¿Como aplicas en programar?</a></li>
+              <li><a class="dropdown-item" href="#">¿Como dibujas en pixel art?</a></li>
+              <li><a class="dropdown-item" href="#">¿Tengo un proyecto o puedo invertir en su empresa?</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Direccion</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,53 @@
+.text-bluesky{
+    color:rgba(45, 187, 253, 0.836);
+    font-size:36px;
+}
+
+.text-greendark{
+    color:rgba(0, 78, 13, 0.836);
+    font-size:48px;
+    font-weight: 700;
+}
+
+.text-steel{
+    color:rgb(67, 70, 75);
+    font-weight: 700;
+    font-size:48px;
+}
+
+.text-copper{
+    color:rgb(72, 45, 20);
+    font-weight: 700;
+    font-size:48px;
+}
+
+.text-silver{
+    color:silver;
+    font-weight: 700;
+    font-size:48px;
+}
+
+.text-gold{
+    color:gold;
+    font-weight: 700;
+    font-size:48px;
+}
+
+.text-platinum{
+    color:rgb(229, 228, 226);
+    font-weight: 700;
+    font-size:48px;
+}
+
+
+
+
+.rounded-delta{
+    width: 140px;
+    height: 200px;
+}
+
+.rounded-alfa{
+    width: 35px;
+    height: 35px;
+}

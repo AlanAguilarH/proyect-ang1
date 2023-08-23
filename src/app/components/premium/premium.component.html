@@ -1,0 +1,26 @@
+<h1>Estos son los tipos de paquetes</h1>
+<p>solo aplican cierto periodo de tiempo</p>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let dato of datos; let id=index">
+        <div class="card">
+            <div class="card-image"> <img [src]="dato.imagen" class="img" alt="..." (click)="verPaquete(id)"> </div>
+            <div class="card-body">
+            <h5 class="card-title">{{dato.titulo}}</h5>
+            <p class="card-text">{{dato.subtitulo}}</p>
+            </div>
+            <ul class="list-group list-group-flush" *ngFor="let costo of dato.costos">
+                <li class="list-group-item"><strong>{{costo.tipo}} </strong> </li>
+                <li class="list-group-item">{{costo.mes}} </li>
+                <li class="list-group-item">{{costo.semestre}} </li>
+                <li class="list-group-item">{{costo.anio}}</li> 
+            </ul>
+            <div class="card-body" *ngFor="let link of dato.links">
+                <a href="#" class="card-link">{{link.mes}}</a>
+                <a href="#" class="card-link">{{link.semestre}}</a>
+                <a href="#" class="card-link">{{link.anio}}</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>

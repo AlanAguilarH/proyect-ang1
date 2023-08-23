@@ -108,6 +108,15 @@ export class Ejemplotp2Component implements OnInit {
     //     })
     //     .catch((err) => console.error(err))
   
+    try {
+      await promesa();
+      await promesa();
+      console.log('hola');
+  } catch (err) {
+      console.error(err);
+  }
+
+
     await promesa();
     console.log('Aquí termina la primer promesa');
     await promesa();

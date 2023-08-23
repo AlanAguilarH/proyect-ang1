@@ -14,7 +14,7 @@
             <a class="nav-link active" aria-current="page" [routerLink]="['/header']">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">¿Quenes somomos?</a>
+            <a class="nav-link active" aria-current="page" href="#">¿Quenes somos?</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -22,11 +22,11 @@
              Dudas
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <!---[routerLink]="['/body,/duda']"--->
+              <!---[routerLink]="['/body,/duda']"--->
               <li><a class="dropdown-item" href="#">Soy nuevo, ¿que hago para ingresar como estudiante o nuevo voluntario?</a></li>
               <!---[routerLink]="['/duda']"--->
               <li><a class="dropdown-item" href="#">¿como te contacto?</a></li>
-              <li><a class="dropdown-item" href="#">¿Tienes cuentas de redes sociales?</a></li>
+                            <li><a class="dropdown-item" href="#">¿Tienes cuentas de redes sociales?</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">¿Como aplicas en programar?</a></li>
               <li><a class="dropdown-item" href="#">¿Como dibujas en pixel art?</a></li>
@@ -35,7 +35,14 @@
               <li><a class="dropdown-item" href="#">Direccion</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['/listproducts']">Crud Productos</a>
+          </li>         
         </ul>
       </div>
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">buscar</button>
+      </form>
     </div>
   </nav>

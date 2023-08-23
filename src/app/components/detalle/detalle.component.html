@@ -1,0 +1,26 @@
+<h1 class="text-bluesky">Detalles de los servicios de servidores</h1>
+<h3 class="text-white bg-dark">Acontinuación se describe la funcionalidades de los paquetes</h3>
+<div class="col-md-8 " *ngFor="let paquete of paquetes">  
+<h2 *ngIf="paquete.Nombre_paquete=='Servidor de Hierro (Fe)'" class="text-greendark bg-info"> <br> <img [src]="paquete.img_paquete" class="rounded-delta" alt="..."> {{paquete.Nombre_paquete}} </h2>
+<h2 *ngIf="paquete.Nombre_paquete=='Servidor de Acero (FeC)'" class="text-steel bg-info" > <br> <img [src]="paquete.img_paquete" class="rounded-delta" alt="..."> {{paquete.Nombre_paquete}} </h2>
+<h2 *ngIf="paquete.Nombre_paquete=='Servidor de Cobre (Cu)'" class="text-copper bg-info" > <br> <img [src]="paquete.img_paquete" class="rounded-delta" alt="..."> {{paquete.Nombre_paquete}} </h2>
+<h2 *ngIf="paquete.Nombre_paquete=='Servidor de Plata (Ag)'" class="text-silve bg-info" > <br> <img [src]="paquete.img_paquete" class="rounded-delta" alt="..."> {{paquete.Nombre_paquete}} </h2>
+<h2 *ngIf="paquete.Nombre_paquete=='Servidor de Oro (Au)'" class="text-gold bg-info" > <br> <img [src]="paquete.img_paquete" class="rounded-delta" alt="..."> {{paquete.Nombre_paquete}} </h2>
+<h2 *ngIf="paquete.Nombre_paquete=='Servidor de Platino (Pt)'" class="text-platinum bg-info" > <br> <img [src]="paquete.img_paquete" class="rounded-delta" alt="..."> {{paquete.Nombre_paquete}} </h2>
+
+<p>{{paquete.Descp_paquete}}</p>
+<br><br>
+<h1> Caracteristicas </h1>
+<p><img [src]="paquete.img_Vel" class="rounded-alfa" alt="..."> {{paquete.vel_paquete}}</p>
+<p><img [src]="paquete.img_Download" class="rounded-alfa" alt="..."> {{paquete.download_paquete}}</p>
+<p><img [src]="paquete.img_Upload" class="rounded-alfa" alt="..."> {{paquete.upload_paquete}}</p>
+<span class="badge rounded-pill bg-warning text-dark">Advertencia</span>
+<br><br>
+<p>{{paquete.adv_paq}}</p>
+<br><br>
+<a class="btn btn-outline-danger btn-block" [routerLink]="['/premium']" role="button">Regresar paquetes premium</a>
+</div>
+
+
+
+

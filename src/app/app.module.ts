@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { APP_ROUTING } from './app.routes';
 
+import { PaqueteServicie } from './paquete/paquete.server';
+
 import { AppComponent } from './app.component';
 import { BodyComponent } from './components/body/body.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -18,6 +20,10 @@ import { Ejemplotp1Component } from './components/ejemplotp1/ejemplotp1.componen
 import { Ejemplotp2Component } from './components/ejemplotp2/ejemplotp2.component';
 import { Ejemplotp3Component } from './components/ejemplotp3/ejemplotp3.component';
 import { Ejemplotp4Component } from './components/ejemplotp4/ejemplotp4.component';
+import { EjemploproyfrontendComponent } from './components/ejemploproyfrontend/ejemploproyfrontend.component';
+import { ListProductsComponent } from './components/list-products/list-products.component';
+import { PremiumComponent } from './components/premium/premium.component';
+import { DetalleComponent } from './components/detalle/detalle.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +41,19 @@ import { Ejemplotp4Component } from './components/ejemplotp4/ejemplotp4.componen
     Ejemplotp1Component,
     Ejemplotp2Component,
     Ejemplotp3Component,
-    Ejemplotp4Component
+    Ejemplotp4Component,
+    EjemploproyfrontendComponent,
+    ListProductsComponent,
+    PremiumComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    PaqueteServicie
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,6 +9,10 @@ import { Ejemplotp1Component } from './components/ejemplotp1/ejemplotp1.componen
 import { Ejemplotp2Component } from './components/ejemplotp2/ejemplotp2.component';
 import { Ejemplotp3Component } from './components/ejemplotp3/ejemplotp3.component';
 import { Ejemplotp4Component } from './components/ejemplotp4/ejemplotp4.component';
+import { EjemploproyfrontendComponent } from './components/ejemploproyfrontend/ejemploproyfrontend.component';
+import { ListProductsComponent } from './components/list-products/list-products.component';
+import { PremiumComponent } from "./components/premium/premium.component";
+import { DetalleComponent } from "./components/detalle/detalle.component";
 
 const APP_ROUTES: Routes = [
   { path: 'Inicio', component: HeaderComponent}, //home
@@ -19,8 +23,12 @@ const APP_ROUTES: Routes = [
   { path: 'ejemplotp2', component: Ejemplotp2Component},
   { path: 'ejemplotp3', component: Ejemplotp3Component},
   { path: 'ejemplotp4', component: Ejemplotp4Component},
+  { path: 'ejemploproyfrontend', component: EjemploproyfrontendComponent},
+  { path: 'listproducts', component: ListProductsComponent},
+  { path: 'premium', component: PremiumComponent},
   { path: 'body', component: BodyComponent},
   { path: 'ejemplocss1', component: Ejemplocss1Component},
+  { path: 'detalle/:id', component: DetalleComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'Inicio'}
   ];
 

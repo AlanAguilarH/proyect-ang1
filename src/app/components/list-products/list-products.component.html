@@ -1,12 +1,16 @@
 <div class="container">
+  <div class="title"> 
     <h4> El enlistado de productos </h4>
-    <button type="button" class="btn btn-purple">Agregar</button>
+    <button type="button" class="btn btn-purple" [routerLink]="['/add']">Agregar Producto de VideoJuego</button>
+    <!---->
+  </div>
     <table class="table table-hover">
         <thead>
           <tr>
             <th scope="col">Nombre</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Edad Clasificacion</th>
+            <th scope="col">Consolas</th>
             <th scope="col">Precio</th>
             <th scope="col">Stock</th>
             <th scope="col"></th>
@@ -17,9 +21,13 @@
             <td>{{ item.name }} </td>
             <td>{{ item.description }}</td>
             <td>{{ item.ratingage }}</td>
+            <td>{{ item.console }}</td>
             <td>{{ item.price }}</td>
             <td>{{ item.stock }}</td>
-            <td></td>
+            <td>
+              <button [routerLink]="['/edit',item.id]" type="button" class="btn btn-info btn-sm">Editar</button>
+              <button type="button" class="btn btn-danger btn-sm ms-2">Eliminar</button>
+            </td>
           </tr>
         </tbody>
       </table>    

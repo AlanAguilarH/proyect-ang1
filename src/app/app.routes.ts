@@ -13,6 +13,7 @@ import { EjemploproyfrontendComponent } from './components/ejemploproyfrontend/e
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { PremiumComponent } from "./components/premium/premium.component";
 import { DetalleComponent } from "./components/detalle/detalle.component";
+import { AddEditProductVideogameComponent } from "./components/add-edit-product-videogame/add-edit-product-videogame.component";
 
 const APP_ROUTES: Routes = [
   { path: 'Inicio', component: HeaderComponent}, //home
@@ -24,11 +25,14 @@ const APP_ROUTES: Routes = [
   { path: 'ejemplotp3', component: Ejemplotp3Component},
   { path: 'ejemplotp4', component: Ejemplotp4Component},
   { path: 'ejemploproyfrontend', component: EjemploproyfrontendComponent},
-  { path: 'listproducts', component: ListProductsComponent},
   { path: 'premium', component: PremiumComponent},
   { path: 'body', component: BodyComponent},
   { path: 'ejemplocss1', component: Ejemplocss1Component},
   { path: 'detalle/:id', component: DetalleComponent},
+  //componentes proyecto
+  { path: 'listproducts', component: ListProductsComponent},
+  { path: 'add', component: AddEditProductVideogameComponent},
+  { path: 'edit/:id', component: AddEditProductVideogameComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'Inicio'}
   ];
 

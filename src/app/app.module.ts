@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { APP_ROUTING } from './app.routes';
 
-import { PaqueteServicie } from './paquete/paquete.server';
+import { PaqueteServicie } from './paquete/paquete.server'; 
+
+import { AddEditProductVideogameComponent } from './components/add-edit-product-videogame/add-edit-product-videogame.component';
+import { ListProductsComponent } from './components/list-products/list-products.component';
 
 import { AppComponent } from './app.component';
 import { BodyComponent } from './components/body/body.component';
@@ -21,9 +26,9 @@ import { Ejemplotp2Component } from './components/ejemplotp2/ejemplotp2.componen
 import { Ejemplotp3Component } from './components/ejemplotp3/ejemplotp3.component';
 import { Ejemplotp4Component } from './components/ejemplotp4/ejemplotp4.component';
 import { EjemploproyfrontendComponent } from './components/ejemploproyfrontend/ejemploproyfrontend.component';
-import { ListProductsComponent } from './components/list-products/list-products.component';
 import { PremiumComponent } from './components/premium/premium.component';
 import { DetalleComponent } from './components/detalle/detalle.component';
+
 
 @NgModule({
   declarations: [
@@ -45,10 +50,12 @@ import { DetalleComponent } from './components/detalle/detalle.component';
     EjemploproyfrontendComponent,
     ListProductsComponent,
     PremiumComponent,
-    DetalleComponent
+    DetalleComponent,
+    AddEditProductVideogameComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     APP_ROUTING
   ],
   providers: [

@@ -1,0 +1,43 @@
+<div class="row mt-1">
+    <div class="col-lg-4 offset-lg-4">
+        <div class="card text-white bg-success mb-3" style="max-width: 25rem;">
+            <div class="card-header text-center">Agregar Producto de VideoJuego</div>
+            <div class="card-body">
+                <form [formGroup]="form" (ngSubmit)="addProduct()">
+                    <input formControlName="name" type="text" class="form-control" placeholder="Ingrese nombre">
+                    <span *ngIf="form.get('name')?.hasError('required') && form.get('name')?.touched">
+                        El campo de nombre es <strong class="red_notice"> requerido</strong>
+                    </span>
+                    <input formControlName="description" type="text" class="form-control mt-3" placeholder="Ingrese descripcion">
+                    <span *ngIf="form.get('description')?.hasError('required') && form.get('description')?.touched">
+                        El campo de descripcion es <strong class="red_notice"> requerido</strong>
+                    </span>
+                    <input formControlName="ratingage" type="text" class="form-control mt-3" placeholder="Ingrese edad clasificacion">
+                    <span *ngIf="form.get('ratingage')?.hasError('required') && form.get('ratingage')?.touched">
+                        El campo de edad clasificacion es <strong class="red_notice"> requerido</strong>
+                    </span>
+                    <input formControlName="console" type="text" class="form-control mt-3" placeholder="Ingrese consolas">
+                    <span *ngIf="form.get('console')?.hasError('required') && form.get('console')?.touched">
+                        El campo de consolas es <strong class="red_notice"> requerido</strong>
+                    </span>
+                    <input formControlName="price" type="number" class="form-control mt-3" placeholder="Ingrese precio"> 
+                    <span *ngIf="form.get('price')?.hasError('required') && form.get('price')?.touched">
+                        El campo de precio es <strong class="red_notice"> requerido</strong>
+                    </span>
+                    <input formControlName="stock" type="number" class="form-control mt-3" placeholder="Ingrese stock">
+                    <span *ngIf="form.get('stock')?.hasError('required') && form.get('stock')?.touched">
+                        El campo de stock es <strong class="red_notice"> requerido</strong>
+                    </span>
+                    <div class="row mt-2 text-center">
+                        <div class="col-lg-6">
+                            <button [routerLink]="['/listproducts']" type="button" class="btn btn-warning">Volver</button>    
+                        </div>
+                        <div class="col-lg-6">
+                            <button [disabled]="form.invalid" type="submit" class="btn btn-dark">Aceptar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>             
+    </div>
+</div>
